@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Projetos - Downloads</title>
+    <title>Repositório de Projetos - BV</title>
     <style>
         :root {
             --bg-color: #121212;
@@ -72,26 +72,47 @@
         .download-btn:hover {
             background-color: var(--accent-hover);
         }
+        .download-btn.disabled {
+            background-color: #444444;
+            color: #888888;
+            cursor: not-allowed;
+            pointer-events: none; /* Impede o clique no navegador */
+        }
     </style>
 </head>
 <body>
 
-    <h1>Repositório de Ferramentas</h1>
+    <h1>Repositório de Projetos - BV</h1>
     
     <div class="container">
         <div class="card">
-            <h2>Automação em Python</h2>
-            <div class="version">Versão atual: v1.0.0</div>
-            <p class="description">Programa executável que realiza automações e processamento de dados localmente.</p>
-            <a href="#" class="download-btn">Baixar para Windows (.exe)</a>
+            <h2>Programa - Validação Laudos Transgenia</h2>
+            <div class="version">Versão atual: v1.0</div>
+            <p class="description">Programa para automação dos processos de validação de laudos.</p>
+            <a href="https://github.com/GabrielFQK/projetos-BV/releases/download/1.0/ValidacaoLaudo.exe" class="download-btn">Baixar Programa (.exe)</a>
+        </div>
+        
+        <div class="card">
+            <h2>Extensão - Comparativo de Safras</h2>
+            <div class="version">Versão atual: v1.3</div>
+            <p class="description">Extensão para preencher automaticamente o comparativo de safras, selecionando a tecnologia e a área.</p>
+            <a href="https://github.com/GabrielFQK/projetos-BV/releases/download/1.0/extensao-comparativo-de-safras.rar" class="download-btn">Baixar Extensão (.zip)</a>
         </div>
 
         <div class="card">
-            <h2>Extensão Produtividade</h2>
-            <div class="version">Versão atual: v1.1.2</div>
-            <p class="description">Extensão para Google Chrome. Descompacte e carregue em "Modo do Desenvolvedor".</p>
-            <a href="#" class="download-btn">Baixar Extensão (.zip)</a>
+            <h2>Extensão - Importador de Arquivos</h2>
+            <div class="version">Versão atual: v1.2</div>
+            <p class="description">Extensão para importar os anexos automaticamente para o site do Transgenia, preenchendo os campos necessários.</p>
+            <a href="https://github.com/GabrielFQK/projetos-BV/releases/download/1.0/extensao-importador-arquivos.rar" class="download-btn">Baixar Extensão (.zip)</a>
         </div>
+
+        <div class="card" style="opacity: 0.85;">
+            <h2>Extensão - Monitoramento de Formulários</h2>
+            <div class="version" style="color: #ffc107; font-weight: bold;">Status: Em Construção</div>
+            <p class="description">Extensão para controle de formulários pendentes de assinatura.</p>
+            <a href="#" class="download-btn disabled" onclick="return false;">Indisponível</a>
+        </div>
+        
     </div>
 
 </body>
